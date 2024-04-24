@@ -1,3 +1,5 @@
+import './assets/styles.scss';
+
 export default function Sidebar(): JSX.Element {
   return (
     <nav className="sidebar">

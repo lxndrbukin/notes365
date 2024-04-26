@@ -1,0 +1,62 @@
+@import '../../../assets/variables.scss';
+
+.notes {
+  background-color: $light-grey;
+
+
+  .notes-actions {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-sm;
+    padding: $spacing-xl;
+
+    input {
+      padding: $spacing-md;
+      border: none;
+      background-color: $grey;
+    }
+
+    button {
+      background-color: $dark-blue;
+      border: none;
+      padding: $spacing-md;
+      color: $white;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: $spacing-sm;
+      cursor: pointer;
+    }
+  }
+
+  .notes-list {
+    list-style-type: none;
+    padding: 0;
+
+    .notes-list-item {
+      padding: $spacing-md $spacing-lg;
+      border-bottom: 1px solid $grey;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $grey;
+      }
+
+      .notes-list-item-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .notes-list-item-title {
+        margin: 0;
+      }
+
+      .notes-list-item-text {
+        margin: 0;
+        font-size: 0.89rem;
+      }
+    }
+  }
+}

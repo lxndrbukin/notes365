@@ -3,4 +3,57 @@
 .sidebar {
   background-color: $dark-blue;
   color: $white;
+  padding: $spacing-xl $spacing-lg;
+
+  .sidebar-user {
+    margin-bottom: $spacing-xl;
+
+    .sidebar-user-name {
+      font-size: 0.99rem;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      svg {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .sidebar-categories {
+
+    .sidebar-categories-header {
+      margin: $spacing-sm 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      svg {
+        cursor: pointer;
+      }
+    }
+
+    .sidebar-categories-list {
+      list-style-type: none;
+      padding-left: $spacing-md;
+      margin: $spacing-md $spacing-md $spacing-lg $spacing-md;
+      font-size: 0.9rem;
+      color: $light-grey;
+
+      li {
+        padding: $spacing-sm 0;
+      }
+    }
+
+    button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      color: $white;
+      display: flex;
+      gap: $spacing-sm;
+      padding: 0;
+    }
+  }
 }

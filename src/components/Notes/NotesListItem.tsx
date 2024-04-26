@@ -7,13 +7,13 @@ export default function NotesListItem({
   category,
 }: NotesListItemProps): JSX.Element {
   return (
-    <li className="notes-list-item">
-      <div className="notes-list-item-top">
+    <li className='notes-list-item'>
+      <div className='notes-list-item-top'>
         <span>{category}</span>
         <span>{date}</span>
       </div>
-      <h5 className="notes-list-item-title">{title}</h5>
-      <p className="notes-list-item-text">{text}</p>
+      <h4 className='notes-list-item-title'>{title}</h4>
+      <p className='notes-list-item-text'>{text}</p>
     </li>
   );
 }

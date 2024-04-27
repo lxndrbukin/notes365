@@ -1,9 +1,14 @@
 @import '../../../assets/variables.scss';
 
 .sidebar {
-  background-color: $dark-blue;
-  color: $white;
+  background-color: $green;
+  color: $light-grey;
   padding: $spacing-xl $spacing-lg;
+
+  .sidebar-logo {
+    font-weight: 800;
+    font-family: "Open Sans", sans-serif;
+  }
 
   .sidebar-user {
     margin-bottom: $spacing-xl;

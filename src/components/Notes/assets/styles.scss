@@ -1,8 +1,7 @@
 @import '../../../assets/variables.scss';
 
 .notes {
-  background-color: $light-grey;
-
+  background-color: $dark-grey;
 
   .notes-actions {
     display: flex;
@@ -14,10 +13,19 @@
       padding: $spacing-md;
       border: none;
       background-color: $grey;
+      color: $light-grey;
+
+      &::placeholder {
+        color: $light-grey;
+      }
+
+      &:focus {
+        outline: none;
+      }
     }
 
     button {
-      background-color: $dark-blue;
+      background-color: $green;
       border: none;
       padding: $spacing-md;
       color: $white;
@@ -33,6 +41,7 @@
   .notes-list {
     list-style-type: none;
     padding: 0;
+    color: $light-grey;
 
     .notes-list-item {
       padding: $spacing-md $spacing-lg;
@@ -59,4 +68,8 @@
       }
     }
   }
+}
+
+z .ck-editor {
+  background-color: $grey;
 }

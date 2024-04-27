@@ -6,6 +6,7 @@ import { GoPlus } from 'react-icons/go';
 export default function Sidebar(): JSX.Element {
   return (
     <nav className='sidebar'>
+      <div className='sidebar-logo'>notes365</div>
       <div className='sidebar-user'>
         <span className='sidebar-user-name'>
           Some User <BsThreeDotsVertical />

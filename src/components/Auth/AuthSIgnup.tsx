@@ -13,9 +13,5 @@ export default function AuthSignup(): JSX.Element {
     console.log(email.value, password.value);
   };
 
-  return (
-    <AuthForm onSubmit={handleSubmit} buttonText="Sign Up">
-      <></>
-    </AuthForm>
-  );
+  return <AuthForm buttonText="Sign Up" />;
 }

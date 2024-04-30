@@ -6,9 +6,9 @@ export default function AuthFormInput({
   name,
 }: AuthFormInputProps): JSX.Element {
   return (
-    <div className="auth-form-input">
+    <div className='auth-form-input'>
       <label>{label}</label>
-      <input name={name} type={type} />
+      <input name={name} type={type} autoComplete='new-password' />
     </div>
   );
 }

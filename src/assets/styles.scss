@@ -7,9 +7,13 @@ body {
   height: 100vh;
   font-family: 'Nunito Sans', sans-serif;
 
-  .main-container {
+  .container {
     height: 100vh;
-    display: grid;
-    grid-template-columns: 220px minmax(25%, 450px) 1fr;
+
+    .main {
+      display: grid;
+      grid-template-columns: 220px minmax(25%, 450px) 1fr;
+      height: 100%;
+    }
   }
 }

@@ -1,13 +1,9 @@
-import Sidebar from './Sidebar/Sidebar';
-import Notes from './Notes/Notes';
-import NoteEditor from './Notes/NoteEditor';
+import { Outlet } from 'react-router-dom';
 
 export default function App(): JSX.Element {
   return (
-    <div className='main-container'>
-      <Sidebar />
-      <Notes />
-      <NoteEditor />
+    <div className='container'>
+      <Outlet />
     </div>
   );
 }

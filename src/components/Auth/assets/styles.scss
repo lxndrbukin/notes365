@@ -1,0 +1,63 @@
+@import '../../../assets/variables.scss';
+
+.auth {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  background-color: $light-grey;
+
+  .auth-side {
+    background-color: $dark-blue;
+    width: 100%;
+    height: 100%;
+    display: grid;
+
+    span {
+      font-weight: 800;
+      align-self: center;
+      justify-self: center;
+      color: $white;
+      font-size: 3rem;
+    }
+  }
+
+  .auth-form {
+    width: fit-content;
+    justify-self: center;
+    display: grid;
+    grid-auto-rows: min-content;
+    gap: $spacing-md;
+    width: 25%;
+    min-width: 300px;
+
+    .auth-form-input {
+      display: flex;
+      flex-direction: column;
+
+      input {
+        padding: $spacing-md;
+        border: none;
+        background-color: $grey;
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+
+    button {
+      background-color: $dark-blue;
+      border: none;
+      padding: $spacing-md;
+      color: $white;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: $spacing-sm;
+      cursor: pointer;
+    }
+  }
+}

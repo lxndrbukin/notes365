@@ -1,12 +1,10 @@
+import { AuthFormValues } from '../../../store/thunks/types';
+import { AsyncThunk } from '@reduxjs/toolkit';
+import { AsyncThunkConfig } from '@reduxjs/toolkit/dist/createAsyncThunk';
+
 export interface AuthFormProps {
   buttonText: string;
-  thunk: ({
-    email,
-    password,
-  }: {
-    email: string;
-    password: string;
-  }) => Promise<void>;
+  thunk: AsyncThunk<void, AuthFormValues, AsyncThunkConfig>;
 }
 
 export interface AuthFormInputProps {
